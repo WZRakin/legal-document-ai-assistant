@@ -1,0 +1,15 @@
+SERVICE AGREEMENT
+
+This Service Agreement is made on 1 May 2026 between Alpha Trading Ltd, located in Dhaka, Bangladesh, and Beta Software Studio, located in Gazipur, Bangladesh.
+
+Alpha Trading Ltd shall be the Client. Beta Software Studio shall be the Service Provider.
+
+The Service Provider shall design and develop a product showcase website for the Client. The work shall include homepage design, product listing page, product detail page, contact form, and basic admin handover.
+
+The Client shall pay BDT 25,000 as development fee. The Client shall also pay yearly server cost of either BDT 10,000 or BDT 15,000 depending on selected hosting package. Payment is due within 7 working days of invoice submission.
+
+Either party may terminate this Agreement by providing 30 days written notice. If the Client terminates after work has started, completed milestones shall remain payable.
+
+If either party breaches a material obligation, the non-breaching party shall provide written notice and allow 10 working days to cure the breach.
+
+This Agreement does not clearly state governing law or dispute resolution forum.

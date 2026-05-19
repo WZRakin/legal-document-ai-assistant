@@ -1,0 +1,130 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f4f1ec;
+  color: #161616;
+}
+.shell {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 30px 18px 60px;
+}
+.hero {
+  border-radius: 28px;
+  padding: 38px;
+  background: linear-gradient(135deg, #111, #3b3025);
+  color: #fff;
+  margin-bottom: 18px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.14);
+}
+.eyebrow {
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #d8c1a1;
+  margin: 0 0 8px;
+}
+h1 { font-size: clamp(32px, 5vw, 58px); line-height: 1; margin: 0 0 14px; }
+h2 { margin-top: 0; font-size: 22px; }
+.card {
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 24px;
+  padding: 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 14px 35px rgba(0,0,0,.07);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+input, textarea {
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.14);
+  border-radius: 14px;
+  padding: 13px 14px;
+  margin: 8px 0;
+  font: inherit;
+  background: #fff;
+}
+textarea {
+  min-height: 380px;
+  resize: vertical;
+}
+button, a#downloadDraft {
+  display: inline-block;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 18px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 8px 8px 8px 0;
+}
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #111;
+  color: #f7f1e8;
+  border-radius: 18px;
+  padding: 14px;
+  max-height: 320px;
+  overflow: auto;
+}
+.doc-item {
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  margin-top: 10px;
+  background: #fff;
+}
+.muted { color: #666; }
+@media (max-width: 800px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding: 26px; }
+}
+
+.evidence-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.evidence-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 8px;
+}
+
+.evidence-head span {
+  font-weight: 700;
+  color: #111827;
+}
+
+.evidence-head small {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.evidence-card p {
+  margin: 0;
+  color: #374151;
+  line-height: 1.65;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.muted {
+  color: #6b7280;
+}

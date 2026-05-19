@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legal Document AI Portal</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Grounded legal-style drafting</p>
+        <h1>PDF to structured fields, evidence, and memo</h1>
+        <p>Upload a messy legal-style PDF, extract text, retrieve evidence, generate a grounded first-pass memo, then learn from operator edits.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1. Upload PDF</h2>
+      <form id="uploadForm">
+        <input type="file" name="file" accept="application/pdf" required />
+        <button type="submit">Upload & Process</button>
+      </form>
+      <pre id="uploadResult"></pre>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>2. Documents</h2>
+        <button id="refreshDocs">Refresh Documents</button>
+        <div id="docs"></div>
+      </div>
+
+      <div class="card">
+        <h2>3. Retrieval</h2>
+        <input id="docId" placeholder="Document ID" />
+        <input id="query" placeholder="Search evidence, e.g. termination notice" />
+        <button id="retrieveBtn">Retrieve Evidence</button>
+        <pre id="retrievalResult"></pre>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4. Generate Grounded Draft</h2>
+      <input id="draftDocId" placeholder="Document ID" />
+      <button id="draftBtn">Generate Draft</button>
+      <textarea id="draftOutput" placeholder="Draft will appear here"></textarea>
+      <a id="downloadDraft" href="#" target="_blank">Download draft markdown</a>
+    </section>
+
+    <section class="card">
+      <h2>5. Operator Edit Learning</h2>
+      <p class="muted">Edit the draft above, then save the edited version. The system stores reusable improvement rules.</p>
+      <button id="learnBtn">Learn From Edited Draft</button>
+      <pre id="learnResult"></pre>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
